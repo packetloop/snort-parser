@@ -48,4 +48,8 @@ object SnortCodec {
   //  reference:arachnids,IDS287; reference:bugtraq,1387; \
   //  reference:cve,CAN-2000-1574;)
 
+
+  // Reference - http://www.pearsonhighered.com/samplechapter/0131407333.pdf
+  // The reference.config file plays an important role because it contains the actual URL to reach a particular reference
+
 }
