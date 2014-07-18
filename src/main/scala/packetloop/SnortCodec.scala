@@ -1,0 +1,5 @@
+package packetloop
+
+object SnortCodec {
+
+}
