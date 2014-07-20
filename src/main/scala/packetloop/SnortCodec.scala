@@ -5,12 +5,20 @@ object SnortCodec {
   // Snort Rule - http://manual.snort.org/node28.html
   //   Most Snort rules are written in a single line, rules may span multiple lines by adding a backslash \ to the end of the line
   //   Snort rules are divided into two logical sections, the rule header and the rule options
-  //
-  // Rule Headers - http://manual.snort.org/node29.html
-  //
-  // Rule Options - http://manual.snort.org/node30.html
-  //   All Snort rule options are separated from each other using the semicolon (;) character
-  //   Rule option keywords are separated from their arguments with a colon (:) character
+
+  /**
+   * @note http://manual.snort.org/node29.html
+   */
+  case class RuleHeader()
+
+  /**
+   * Rule Options
+   * - All Snort rule options are separated from each other using the semicolon (;) character
+   * - Rule option keywords are separated from their arguments with a colon (:) character
+   *
+   * @note http://manual.snort.org/node30.html
+   */
+  case class RuleOptions()
 
   // There are four major categories of rule options:
   //   general : provide information about the rule but do not have any affect during detection
